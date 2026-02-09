@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login · Tickets Notify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="user">
+    <header class="app-header">
+        <div class="header-inner container">
+            <div class="brand">
+                <a href="index.html">
+                    <h1>🎟️ Tickets Notify</h1>
+                </a>
+            </div>
+    
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn">
+                ☰
+            </label>
+    
+            <nav class="menu">
+                <!-- Guest (not logged in) -->
+                <div class="menu-group guest">
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html" class="highlight">Register</a>
+                </div>
+            
+                <!-- User (logged in) -->
+                <div class="menu-group user">
+                    <a href="index.html">Home</a>
+                    <a href="dashboard.html">My tickets</a>
+                    <a href="#" class="danger">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container" style="max-width: 420px;">
+        <h1>🔐 Login</h1>
+    
+        <form class="card">
+            <div class="filter-group">
+                <label>Email</label>
+                <input type="email" required />
+            </div>
+    
+            <div class="filter-group">
+                <label>Password</label>
+                <input type="password" required />
+            </div>
+    
+            <!-- error placeholder -->
+            <p class="meta" style="color:#fca5a5; display:none;">
+                Invalid credentials
+            </p>
+    
+            <button class="btn primary" style="width:100%; margin-top:12px;">
+                Login
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

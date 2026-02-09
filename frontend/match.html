@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Match ·Tickets Notify</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="user">
+    <header class="app-header">
+        <div class="header-inner container">
+            <div class="brand">
+                <a href="index.html">
+                    <h1>🎟️ Tickets Notify</h1>
+                </a>
+            </div>
+    
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn">
+                ☰
+            </label>
+    
+            <nav class="menu">
+                <!-- Guest (not logged in) -->
+                <div class="menu-group guest">
+                    <a href="index.html">Home</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html" class="highlight">Register</a>
+                </div>
+            
+                <!-- User (logged in) -->
+                <div class="menu-group user">
+                    <a href="index.html">Home</a>
+                    <a href="dashboard.html">My tickets</a>
+                    <a href="#" class="danger">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <article class="card">
+            <h2>River Plate vs Boca Juniors</h2>
+    
+            <div class="meta">
+                📍 Monumental<br />
+                📅 21/09/2026<br />
+                ⏰ 18:00
+            </div>
+    
+            <span class="badge">Tickets available</span>
+    
+            <p style="margin-top:12px;">
+                Available tickets: <strong>120</strong>
+            </p>
+    
+            <!-- Logged user -->
+            <a href="#" class="btn primary" style="margin-top:12px;">
+                Reserve ticket
+            </a>
+    
+            <!-- Guest (future logic) -->
+            <!-- <a href="login.html" class="btn">Login to reserve</a> -->
+        </article>
+    </main>
+</body>
+
+</html>
